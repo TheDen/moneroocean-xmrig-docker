@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  xmrig:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: xmrig
+    command:
+      - "--url=gulf.moneroocean.stream:10128"
+      - "--user=XMR_WALLET_ADDRESS"
+      - "--rig-id=WORKER_ID"
